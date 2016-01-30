@@ -48,3 +48,19 @@ similar ways. Handy for what Winston calls "state accumulation".
 * `stopApp` is in new widgets functionality; returns a value from the app to calling code.
 * `click`, `dblclick`, and `hover` options in `plotOutput` let you attach actions to graph
 interactions. E.g., can display info about a point when hovering over it.
+
+Shiny Gadgets (Hadley)
+======================
+
+* For _programming_, used by _analysts_, _invoked_ instead of deployed.
+* Three differences: _called_, _display_ in Rstudio, _returns_ a value.
+* Example: get password without risking storing it in the history. 
+* New UI widgets, `stopApp`, `runGadget`.
+* Example, visually include/exclude points in a scattergraph, return vector to script.
+* [RStudio Add-Ins](https://rstudio.github.io/rstudioaddins/): 
+Create a package with some bindings lets you plug into RStudio!
+Uses `rstudioapi` package.
+* Other ideas: color picker, dynamic filtering, plot builders. Things that are hard to 
+express in code but want to do reproducibly.
+
+
