@@ -5,7 +5,7 @@ dashboardPage(
   dashboardHeader(title="Harlan's ShinyDevCon 2016 Notes"),
   dashboardSidebar(
     sidebarMenu(id="tabs",
-                menuItem("Notes", tabName="notes"))
+                menuItem("Notes", tabName="notes", icon=icon("pencil")))
   ),
   dashboardBody(
     tabItems(
