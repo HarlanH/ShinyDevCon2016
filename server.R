@@ -5,6 +5,9 @@ library(markdown)
 rendered_notes <- markdownToHTML(file="notes.md", fragment.only = TRUE)
 
 shinyServer(function(input, output, session) {
+  
+  callModule(mywidget, "one")
+  
   dat <- reactiveValues(mtcars=mtcars)
   
   observe({

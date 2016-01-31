@@ -108,3 +108,13 @@ Shiny as presentation tool. Gives a voice to people good at R.
 Custom tool called Panoramix. Moving past Shiny prototypes.
 * Pick 3: Easy to code, inspectable, customizable, easy to deploy, free.
 * Very nice talk.
+
+Modules (Garrett G)
+===================
+
+* Modules are self-contained and composable. For reuse and isolation. Code pattern.
+* Two functions: UI and Server. UI task returns Shiny UI & a namespace.
+* Best practice for naming: `asdf()` and `asdfUI()`. 
+* Use `tagList()` for the UI returns. Use `NS()` to create simple namespace convention.
+* For server functions, have to use `session`, but don't use `NS`. Instead, use
+`callModule(serverFn, id)` which rescopes `serverFn`. 

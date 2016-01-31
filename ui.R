@@ -7,6 +7,7 @@ dashboardPage(
     sidebarMenu(id="tabs",
                 menuItem("Notes", tabName="notes", icon=icon("pencil")),
                 menuItem("Interactive Graphs", tabName="intgraphs", icon=icon("hand-o-left")),
+                menuItem("Modules", tabName="modules", icon=icon("cubes")),
                 menuItem("About", tabName="about", icon=icon("question")))
   ),
   dashboardBody(
@@ -21,6 +22,8 @@ dashboardPage(
                          ),
                          click = "plot1_click"),
               tableOutput("plot1_hover_table")),
+      tabItem("modules",
+              mywidgetUI("one")),
       tabItem("about",
               div(p(a(href="https://github.com/HarlanH/ShinyDevCon2016", "GitHub Source"))))
     )
