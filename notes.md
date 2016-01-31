@@ -167,9 +167,28 @@ Profiling (Winston Chang)
 =========================
 
 * Can use `Rprof` in Shiny apps. `profvis` package can be handy; wrap expression.
-* Have to wrap the entire app. All code must be in the profvis block.
+* Have to wrap the entire app. All code must be in the profvis block. Or, can use normal
+`Rprof` to collect data, then `profvis` to visualize.
 * May be more integrated in the future.
 
 Data tables  (Yihui Xie)
 ========================
+
+* `DT` uses `htmlwidgets` to interface between R and Javascript.
+* Example of sending selection info from the JS front-end back to R, and using that to
+change display of a linked graph: http://yihui.shinyapps.io/DT-click 
+* Vice-versa: http://yihui.shinyapps.io/DT-proxy
+
+shinyjs (Dean Attali)
+=====================
+
+* Slides linked here: https://github.com/daattali/shinyjs
+* Todo: learn how to make [snippets](https://support.rstudio.com/hc/en-us/articles/204463668-Code-Snippets) for things, e.g., Shiny app templates.
+* Sandbox: `shinyjs::runExample("sandbox")`
+* Includes a delay function for things like hide/show to improve UI.
+* Can wrap things in divs to act on groups.
+* `toggleState` handy to enable/disable buttons based on checkbox value.
+* `hidden(div(id="thanks", h3("Thanks!")))` + `show("thanks")` + `delay(2000, hide("thankyou"))`
+* Works with interactive Rmarkdown too.
+* `extendShinyjs()` lets you call JS functions from within `server.R`
 
