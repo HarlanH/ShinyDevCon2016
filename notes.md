@@ -162,3 +162,14 @@ Dashboards (Nathan Stephens)
 * `reactiveFileReader()` to load CSV file of saved load, reloading frequently based on file
 modified time.
 * `reactiveFileReader` is based on `reactivePoll` which is based on `invalidateLater`.
+
+Profiling (Winston Chang)
+=========================
+
+* Can use `Rprof` in Shiny apps. `profvis` package can be handy; wrap expression.
+* Have to wrap the entire app. All code must be in the profvis block.
+* May be more integrated in the future.
+
+Data tables  (Yihui Xie)
+========================
+
