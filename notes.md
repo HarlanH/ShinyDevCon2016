@@ -123,3 +123,21 @@ with inputs as arguments and outputs as return values, using reactive expression
 * E.g., return the input: `reactive({input$num})`, store in a variable, and use it elsewhere.
 * Use case examples: loading a CSV and returning the result, giving an input to a module.
 * [Documentation](http://shiny.rstudio.com/articles/modules.html).
+
+Debugging (Jonathan McPherson)
+==============================
+
+* Breakpoints can inspect local stack, step through, non-intrusive, only works inside server. 
+(Doesn't work with modules, apparently.)
+* Conditional `browser()` valid everywhere, but intrusive.
+* `runApp(..., display.model="showcase")`! Shows server execution. Doesn't scale well.
+* `options(shiny.reactlog=TRUE)` + `showReactLog()` creates a static HTML version of the log.
+* `printf` works after deployment; use `isolate()` to minimize new dependencies. (I 
+recommend use of `futile.logger` package.)
+* on shinyapps.io, do `rsconnect::showLogs(streaming=TRUE)`! 
+* `options(shiny.trace=TRUE)` shows websocket data.
+* New v0.13 feature shows filtered stack trace on `stop`. 
+* `options(shiny.error=browser)`.
+* JS Dev mode on OS X is Safari parameter. `defaults write org.rstudio.RStudio WebKitDeveloperExtras -bool true` then restart. Allows right-click and InspectElement, which
+works without this on Linux and Windows.
+
