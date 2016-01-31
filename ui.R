@@ -13,7 +13,7 @@ dashboardPage(
   dashboardBody(
     tabItems(
       tabItem("notes",
-              htmlOutput("mdnotes", inline=TRUE)),
+              includeMarkdown("notes.md")),
       tabItem("intgraphs",
               div(p("Hover to see point details; click to remove the point")),
               plotOutput("plot1", width = 400,

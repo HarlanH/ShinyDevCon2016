@@ -141,3 +141,16 @@ recommend use of `futile.logger` package.)
 * JS Dev mode on OS X is Safari parameter. `defaults write org.rstudio.RStudio WebKitDeveloperExtras -bool true` then restart. Allows right-click and InspectElement, which
 works without this on Linux and Windows.
 
+Understanding UI (Garrett Grolemund)
+====================================
+
+* Three methods for building UI: 1) Standard UI.R
+R functions, 2) HTML + Shiny components, 3) HTML + R for
+Shiny components (htmlTemplates).
+* Usual R functions, e.g. `fluidPage`, generate straight HTML body. 
+* `includeCSS()`, `includeHTML()`, `includeMarkdown()` <- didn't know about this! Changing 
+how this is embedded...
+* `index.html` method involves putting in `www` directory and omitting `ui.R`, adding
+ids and classes and including relevant Javascript libraries.
+* New thing is `htmlTemplates`. Put R code in `{{ x }}` in the HTML, then call `htmlTemplate()`
+to interpolate. Can use templates for components of bigger page too.

@@ -2,8 +2,6 @@ library(shiny)
 library(shinydashboard)
 library(markdown)
 
-rendered_notes <- markdownToHTML(file="notes.md", fragment.only = TRUE)
-
 shinyServer(function(input, output, session) {
   
   callModule(mywidget, "one")
@@ -27,10 +25,6 @@ shinyServer(function(input, output, session) {
                       xvar = "wt", yvar = "mpg",
                       threshold = 5, maxpoints = 1)
     row
-  })
-  
-  output$mdnotes <- renderText({
-    rendered_notes
   })
   
 })
