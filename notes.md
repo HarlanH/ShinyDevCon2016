@@ -154,3 +154,11 @@ how this is embedded...
 ids and classes and including relevant Javascript libraries.
 * New thing is `htmlTemplates`. Put R code in `{{ x }}` in the HTML, then call `htmlTemplate()`
 to interpolate. Can use templates for components of bigger page too.
+* See [Joe's demo](https://github.com/jcheng5/scorecard-app)
+
+Dashboards (Nathan Stephens)
+============================
+
+* `reactiveFileReader()` to load CSV file of saved load, reloading frequently based on file
+modified time.
+* `reactiveFileReader` is based on `reactivePoll` which is based on `invalidateLater`.
