@@ -118,3 +118,8 @@ Modules (Garrett G)
 * Use `tagList()` for the UI returns. Use `NS()` to create simple namespace convention.
 * For server functions, have to use `session`, but don't use `NS`. Instead, use
 `callModule(serverFn, id)` which rescopes `serverFn`. 
+* Spent a lot of time dwelling on standard fuctional structure. Set up modules the same way,
+with inputs as arguments and outputs as return values, using reactive expressions.
+* E.g., return the input: `reactive({input$num})`, store in a variable, and use it elsewhere.
+* Use case examples: loading a CSV and returning the result, giving an input to a module.
+* [Documentation](http://shiny.rstudio.com/articles/modules.html).
