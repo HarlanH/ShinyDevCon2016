@@ -63,4 +63,48 @@ Uses `rstudioapi` package.
 * Other ideas: color picker, dynamic filtering, plot builders. Things that are hard to 
 express in code but want to do reproducibly.
 
+Hosting Apps (Jeff Allen)
+=========================
 
+* Seamless reconnecting is coming soon. Can be very long timeout in SSP.
+* New product coming soon: RStudio Connect. Hub for sharing outputs of RStudio with easy
+deploying and management.
+* Seems useful for results of research workflows.
+* Can re-generate Rmd reports on the server -- useful for reporting. Interactively or on
+a schedule. Replaces reporting systems.
+* Substantially improves value of logs.
+* Parameterized reports. "Knit with Parameters" lets user set variables before running.
+* Beta is available now.
+
+Lightning Talks
+===============
+
+* My talk was fun. Hadley only glared a little.
+* Really entertaining talk about a Shiny app that's the front end for a home bar optimization
+tool.
+* [hdnom.io](http://hdnom.io/) -- dashboard for survival modeling with high-dimensional inputs. 
+Very cool work. New vocab: nomogram.
+* [shinyURL](https://github.com/aoles/shinyURL) package for save/restore state to a URL. Could
+be useful for certain smaller internal apps.
+* Reproducibility in UIs is hard. Each widget stores a copy of the code used. 
+[Example site](www.intro-stats.com). Generates code block that can be downloaded.
+Uses `interpolate()` to fill in code templates. 
+
+### Genentech (Brandon Arnieri)	
+
+* Describes results from clinical trials. Internal decision-making. 
+Shiny as presentation tool. Gives a voice to people good at R.
+
+### AirBnB (Ricardo Bion)	
+
+* "Decisions with data at scale". 70 people in all data roles -- 100k pageviews on Shiny.
+* Created app for internal users to explore definitions for Superhost program. 
+* Marketing ROI calculator, using `diagrammeR`. 
+* Dashboard using pre-aggregation (map-reduce) of many data sets. 
+* Dashboards for presentation.
+* Kd-trees for clustering listings and putting on a map.
+* Customizations: Javascript for RCharts, CSS and themes for branding. 
+* Other tools: Batch jobs that generate static site. RMarkdown. Tableau. 
+Custom tool called Panoramix. Moving past Shiny prototypes.
+* Pick 3: Easy to code, inspectable, customizable, easy to deploy, free.
+* Very nice talk.
