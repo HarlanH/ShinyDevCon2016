@@ -192,3 +192,29 @@ shinyjs (Dean Attali)
 * Works with interactive Rmarkdown too.
 * `extendShinyjs()` lets you call JS functions from within `server.R`
 
+Lightning Talks
+===============
+
+* `mytinyshinys.shinyapps.io/dashboard`. `timeline` and `explodingboxplotR` packages.
+* Radiant package/app for business analytics. Saves state.
+* App for exploring inequality in health by country. Avoiding repeated redrawing from linked
+inputs -- best practice unclear?
+* Wordbank (Lang & Cog @ Stanford) -- collection of MacArthur-Bates CDI data. Interactive
+apps for overall and per-lexeme. 
+* `shinypod` package with modules for CSV loading and time-series viz. "reactive ravioli" -- encapsulated.
+* Board Pack app to interactively create commented versions of reports for execs. 
+
+Grid style sheets (Yihui Xie)
+=============================
+
+* "advanced layout libraries from the future"
+* http://gridstylesheets.com -- declarative constraints on tag properties
+* Experimental R package that wraps it. Will be cool, I think.
+
+Friss (Herman Sontrop)
+======================
+
+* Very complex dashboards with a mix of Shiny and Javascript
+* Has red/yellow/green risk scores
+* c3.js, intro.js used extensively
+* Coming soon: https://github.com/FrissAnalytics/shinyJsTutorials 
